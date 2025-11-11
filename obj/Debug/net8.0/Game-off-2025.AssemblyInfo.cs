@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Game-off-2025")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f05f87ff24b2ec7b064ffef62ddb50b9f338154b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24f91dda9b859940bebdd79d80570477684f6cbf")]
 [assembly: System.Reflection.AssemblyProductAttribute("Game-off-2025")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Game-off-2025")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

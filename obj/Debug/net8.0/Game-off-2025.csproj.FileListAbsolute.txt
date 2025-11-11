@@ -31,3 +31,7 @@ C:\Users\Craig\OneDrive\Desktop\Game-off-2025\obj\Debug\net8.0\refint\Game-off-2
 C:\Users\Craig\OneDrive\Desktop\Game-off-2025\obj\Debug\net8.0\Game-off-2025.pdb
 C:\Users\Craig\OneDrive\Desktop\Game-off-2025\obj\Debug\net8.0\Game-off-2025.genruntimeconfig.cache
 C:\Users\Craig\OneDrive\Desktop\Game-off-2025\obj\Debug\net8.0\ref\Game-off-2025.dll
+C:\Users\Craig\OneDrive\Desktop\Game-off-2025\obj\Debug\net8.0\Game-off-2025.sourcelink.json
+C:\Users\Craig\OneDrive\Desktop\Game-off-2025\bin\Debug\net8.0\Content\BobSpriteSheet.xnb
+C:\Users\Craig\OneDrive\Desktop\Game-off-2025\bin\Debug\net8.0\Content\Sand.xnb
+C:\Users\Craig\OneDrive\Desktop\Game-off-2025\bin\Debug\net8.0\Content\Rock.xnb

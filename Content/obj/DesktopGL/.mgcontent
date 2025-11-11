@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/../../Game-off-2025 assets/images/Rock.png</File>
+    <File>C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/BobSpriteSheet.png</File>
+    <File>C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/Sand.jpeg</File>
+  </SourceFiles>
+  <DestFiles>
+    <File>Rock.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
