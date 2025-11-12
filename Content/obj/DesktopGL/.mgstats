@@ -1,4 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/../../Game-off-2025 assets/images/Rock.png","C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/bin/DesktopGL/Rock.xnb","TextureProcessor","Texture2DContent",320,4181,0.0601446
 "C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/BobSpriteSheet.png","C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/bin/DesktopGL/BobSpriteSheet.xnb","TextureProcessor","Texture2DContent",672,65621,0.0056546
+"C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/Rock.png","C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/bin/DesktopGL/Rock.xnb","TextureProcessor","Texture2DContent",295,4181,0.2484069
 "C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/Sand.jpeg","C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/bin/DesktopGL/Sand.xnb","TextureProcessor","Texture2DContent",21568,673165,0.0274396
