@@ -55,6 +55,7 @@ public abstract class Character2D
     {
         get { return _Rectangle; }
     }
+
 }
 
 
@@ -101,10 +102,10 @@ public class Bob : Character2D
 
     public void Update(KeyboardState MyKey)
     {
-        if (MyKey.IsKeyDown(Keys.W)) { MoveForward(); }
-        else if (MyKey.IsKeyDown(Keys.D)) { MoveRight(); }
-        else if (MyKey.IsKeyDown(Keys.S)) { MoveBackward(); }
-        else if (MyKey.IsKeyDown(Keys.A)) { MoveLeft(); }
+        if (MyKey.IsKeyDown(Keys.W)) { MoveForward(); _Rectangle.Y -= 5;}
+        else if (MyKey.IsKeyDown(Keys.D)) { MoveRight(); _Rectangle.X += 5;}
+        else if (MyKey.IsKeyDown(Keys.S)) { MoveBackward(); _Rectangle.Y += 5;}
+        else if (MyKey.IsKeyDown(Keys.A)) { MoveLeft(); _Rectangle.X -= 5;}
     }
 
     public override void Draw()

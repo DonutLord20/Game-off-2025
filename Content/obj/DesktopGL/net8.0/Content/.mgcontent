@@ -4,12 +4,12 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/../../Game-off-2025 assets/images/Rock.png</File>
     <File>C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/BobSpriteSheet.png</File>
+    <File>C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/Rock.png</File>
     <File>C:/Users/Craig/OneDrive/Desktop/Game-off-2025/Content/Sand.jpeg</File>
   </SourceFiles>
   <DestFiles>
-    <File>Rock.png</File>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>

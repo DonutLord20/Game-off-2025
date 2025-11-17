@@ -33,12 +33,6 @@ public class StationaryObject
         _Texture = Texture;
         _Col = Col;
     }
-
-    public void Update(Chunk PlaneOfExistance)
-    {
-        _Rectangle.X = PlaneOfExistance.X + _X;
-        _Rectangle.Y = PlaneOfExistance.Y + _Y;
-    }
     
     public bool IsColliding(Character2D character)
     {
