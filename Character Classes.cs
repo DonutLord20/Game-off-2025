@@ -15,7 +15,6 @@ public abstract class Character2D
     protected SpriteBatch _SB;
     protected int _CurrentFrameX = 0, _CurrentFrameY = 0;
     protected float _Scale;
-    protected bool _CanMoveForwards = true,_CanMoveLeft = true,_CanMoveBackwards = true,_CanMoveRight = true;
 
     public Character2D(Rectangle rectangle, float Scale)
     {
@@ -130,10 +129,10 @@ public class Bob : Character2D
 
     public void Update( KeyboardState MyKey)
     {
-        if (MyKey.IsKeyDown(Keys.W) && _CanMoveForwards) { MoveForward(); _Rectangle.Y -= 5;}
-        else if (MyKey.IsKeyDown(Keys.D) && _CanMoveRight) { MoveRight(); _Rectangle.X += 5;}
-        else if (MyKey.IsKeyDown(Keys.S) && _CanMoveBackwards) { MoveBackward(); _Rectangle.Y += 5;}
-        else if (MyKey.IsKeyDown(Keys.A) && _CanMoveLeft) { MoveLeft(); _Rectangle.X -= 5;}
+        if (MyKey.IsKeyDown(Keys.W)) { MoveForward(); _Rectangle.Y -= 5;}
+        else if (MyKey.IsKeyDown(Keys.D) ) { MoveRight(); _Rectangle.X += 5;}
+        else if (MyKey.IsKeyDown(Keys.S) ) { MoveBackward(); _Rectangle.Y += 5;}
+        else if (MyKey.IsKeyDown(Keys.A)) { MoveLeft(); _Rectangle.X -= 5;}
     }
 
     public override void ApplyCollisions(Rectangle Collsion)
