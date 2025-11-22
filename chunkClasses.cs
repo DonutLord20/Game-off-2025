@@ -38,7 +38,9 @@ public class Chunk
     private static int _SeedX = 0;
     private static int _SeedY = 0;
     public const int CHUNK_SIZE = 128;
-    public Chunk(float Scale)
+
+    private StationaryObject[] _Objects;
+    public Chunk(float Scale,StationaryObject[] Objects)
     {
         _Position = new Vector2(_SeedX,_SeedY);
         _Scale = Scale;
@@ -52,6 +54,9 @@ public class Chunk
         {
             _SeedX += CHUNK_SIZE;
         }
+
+        _Objects = Objects;
+        setPositions();
     }
 
     public void Load(SpriteBatch SB,Texture2D Texture,Color Col)
@@ -61,9 +66,36 @@ public class Chunk
         _Col = Col;
     }
 
+  
+
+    public Rectangle CheckCollisions(Character2D Character)
+    {
+        Rectangle Collision = new Rectangle();
+
+        foreach (var Obj in _Objects)
+        {
+            Collision = Rectangle.Intersect(Obj.Rectangle,Character.Rectangle);
+        }
+
+        return Collision;
+    }
+    private void setPositions()
+    {
+        int count = 10;
+        foreach (StationaryObject Obj in _Objects)
+        {
+            Obj.X = (int)_Position.X + count;
+            count = count * 2;
+        }
+    }
     public void Draw()
     {
         _SB.Draw(_Texture,_Position,null, _Col, 0f, Vector2.Zero, _Scale, SpriteEffects.None, 0f);
+
+        foreach (StationaryObject Obj in _Objects)
+        {
+            Obj.Draw();
+        }
     }
 
     public Vector2 GetPosition()

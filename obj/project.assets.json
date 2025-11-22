@@ -300,11 +300,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Craig\\OneDrive\\Desktop\\Game-off-2025\\Game-off-2025.csproj",
+      "projectUniqueName": "C:\\Users\\Craig\\OneDrive\\Desktop\\Game-off-2025\\Game-Off-2025\\Game-off-2025.csproj",
       "projectName": "Game-off-2025",
-      "projectPath": "C:\\Users\\Craig\\OneDrive\\Desktop\\Game-off-2025\\Game-off-2025.csproj",
+      "projectPath": "C:\\Users\\Craig\\OneDrive\\Desktop\\Game-off-2025\\Game-Off-2025\\Game-off-2025.csproj",
       "packagesPath": "C:\\Users\\Craig\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Craig\\OneDrive\\Desktop\\Game-off-2025\\obj\\",
+      "outputPath": "C:\\Users\\Craig\\OneDrive\\Desktop\\Game-off-2025\\Game-Off-2025\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Craig\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c8H4LM2DCo4=",
+  "dgSpecHash": "a6ny+RD6hDk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Craig\\OneDrive\\Desktop\\Game-off-2025\\Game-off-2025.csproj",
+  "projectFilePath": "C:\\Users\\Craig\\OneDrive\\Desktop\\Game-off-2025\\Game-Off-2025\\Game-off-2025.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Craig\\.nuget\\packages\\monogame.content.builder.task\\3.8.4.1\\monogame.content.builder.task.3.8.4.1.nupkg.sha512",
     "C:\\Users\\Craig\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.4.1\\monogame.framework.desktopgl.3.8.4.1.nupkg.sha512",

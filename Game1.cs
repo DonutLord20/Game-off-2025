@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,6 +14,7 @@ public class Game1 : Game
     private Camera2D Camera;
     private Bob _Player;
     private Dictionary<Vector2,Chunk> WorldChunks = new Dictionary<Vector2, Chunk>();
+    private World _GameWorld;
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
@@ -25,12 +27,7 @@ public class Game1 : Game
         // TODO: Add your initialization logic here
         Camera = new Camera2D(GraphicsDevice.Viewport.Height,GraphicsDevice.Viewport.Width);
         _Player = new Bob(new Rectangle(200,200,32,32),1f,5,5);
-        Chunk Temp;
-        for (int i = 0; i < 36; i++)
-        {
-            Temp = new Chunk(1f);
-            WorldChunks.Add(Temp.GetPosition(),Temp);
-        }
+    
         base.Initialize();
     }
 
@@ -39,10 +36,27 @@ public class Game1 : Game
         _spriteBatch = new SpriteBatch(GraphicsDevice);
        _Player.Load(_spriteBatch,Content.Load<Texture2D>("BobSpriteSheet"),Color.White);
 
+
+        Chunk Temp;
+        for (int i = 0; i < 36; i++)
+        {
+            StationaryObject[] Obj = new StationaryObject[1];
+            for (int j = 0; j < Obj.Count(); j++)
+            {
+                Obj[j] = new StationaryObject(new Rectangle(0,0,15,20),1f);
+                Obj[j].Load(_spriteBatch,Content.Load<Texture2D>("Rock"),Color.White);
+            }
+            Temp = new Chunk(1f,Obj);
+            WorldChunks.Add(Temp.GetPosition(),Temp);
+        }
+
+
         foreach (KeyValuePair<Vector2,Chunk> KVP in WorldChunks)
         {
             KVP.Value.Load(_spriteBatch,Content.Load<Texture2D>("Sand"),Color.White);
         }
+
+        _GameWorld = new World(_spriteBatch,WorldChunks,_Player,Camera);
        
         // TODO: use this.Content to load your game content here
     }
@@ -51,9 +65,7 @@ public class Game1 : Game
     {
         if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
-        KeyboardState MyKey = Keyboard.GetState();
-        _Player.Update(MyKey);
-        Camera.Follow(new Vector2(_Player.X,_Player.Y));
+        _GameWorld.Update();
        
         base.Update(gameTime);
     }
@@ -63,12 +75,7 @@ public class Game1 : Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
 
         _spriteBatch.Begin(samplerState: SamplerState.PointClamp,transformMatrix: Camera.Transform);
-        foreach (KeyValuePair<Vector2,Chunk> KVP in WorldChunks)
-        {
-            KVP.Value.Draw();
-        }
-
-        _Player.Draw();
+        _GameWorld.Draw();
         _spriteBatch.End();
         // TODO: Add your drawing code here
 
